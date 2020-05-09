@@ -4,52 +4,64 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/normalize.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/styles.css'>
 
 </head>
 <body>
-    <header>
-        <!-- Search box -->
-    </header>
-    <div class="gallery">
-        <div>
-            <img src="photos/thumbnails/01.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/02.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/03.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/04.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/05.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/06.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/07.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/08.jpg">
-        <div>
-            <img src="photos/thumbnails/09.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/10.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/11.jpg">
-        </div>
-        <div>
-            <img src="photos/thumbnails/12.jpg">
-        </div>
-    </div>
+    <div class="wrapper clearfix">
+        <header>
+            <!-- Search box -->
+            <input type="search" id="searchBox" name="searchBox">
+        </header>
+        <main class="gallery">
+            <div>
+                <img src="photos/thumbnails/01.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/02.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/03.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/04.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/05.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/06.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/07.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/08.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/09.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/10.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/11.jpg" class="image">
+            </div>
+            <div>
+                <img src="photos/thumbnails/12.jpg" class="image">
+            </div>
+        </main>
+        <footer>
+            <p class="copyright">&copy; 2020, Claire Tregunna</p>
+            <p class="copyright">(no touchy)</p>
+        </footer>
     </div>
     <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/sticky/jquery.sticky.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
