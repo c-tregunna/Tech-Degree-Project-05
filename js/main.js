@@ -31,7 +31,7 @@
 // }
 
 $(document).ready(function(){
-    let images = document.getElementsByTagName('a');
+    let images = document.querySelectorAll('.gallery a');
     $('#searchBox').on('keyup', function(){
         let search =$('#searchBox').val().toLowerCase();
         for(let i = 0; i < images.length; i++) {
