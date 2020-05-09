@@ -11,11 +11,11 @@
 body {
     background:#FFFACD;
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
 }
 
 /* Search field */
 header {
-    border-bottom: 2px solid slategray ;
     width: 100%;
     margin: auto;
     padding: 20px;
@@ -24,10 +24,13 @@ header {
 }
 
 input {
-    width: 30%;
+    width: 100%;
     border-radius: 5px;
     height: 30px;
     border: 2px transparent solid;
+    padding-left: 10px;
+    box-shadow: 2px 2px 2px #ddd;
+
 }
 
 input:focus {
@@ -35,12 +38,16 @@ input:focus {
     outline: none;
 }
 
+::placeholder {
+    font-size: .75em;
+    color: #ddd;
+}
+
 /* gallery */
 
 .gallery {
     width: 100%;
     margin: 20px auto;
-    border: 1px solid;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,6 +57,53 @@ input:focus {
 .image {
     flex: 20%;
     margin: 10px;
+    box-shadow: 0 2px 10px #888;
+    transition: .75s;
+}
+
+.image:hover {
+    transform: scale(1.1) rotate(2deg);
+}
+
+/* Lightbox Specific */
+
+.lightboxOverlay {
+    opacity: .9;
+}
+
+.lb-data .lb-caption { /*Caption font size */
+    font-weight: 200;
+    font-size: 1.25em;
+}
+
+.lb-data .lb-details { /*caption below enlarged image*/
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.lightbox .lb-image {
+    box-shadow: 0 2px 4px #fff;
+}
+
+.lb-nav a.lb-next { /*right next arrow*/
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    /* opacity: .5;  to show always */
+  }
+  .lb-nav a.lb-prev { /*left prev arrow*/
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    /* opacity: .5; to show always*/
+  }
+
+  .lb-data .lb-close { /*close button*/
+    position: absolute;
+    top: -30px;
+    right: 20px;
+    z-index: 100000;
 }
 
 /* Footer */
@@ -60,12 +114,21 @@ input:focus {
 /* Media Queries */
 
 @media (min-width: 768px) {
-
+    input {
+        width: 60%;
+        background-image: url(../photos/search_icon.png);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
 }
 
 @media (min-width: 1024px) {
     .wrapper {
         max-width: 900px;
+    }
+
+    input {
+        width: 40%;
     }
 }
 
