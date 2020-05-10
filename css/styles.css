@@ -20,7 +20,9 @@ header {
     margin: auto;
     padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #ddd;
 }
+
 
 input {
     width: 100%;
@@ -115,6 +117,9 @@ input:focus {
     height: 100vh;
 } */
 
+footer {
+    border-top: 2px solid #ddd;
+}
 
 .copyright {
     text-align: center;
