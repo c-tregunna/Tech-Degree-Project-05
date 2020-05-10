@@ -7,6 +7,7 @@
 .wrapper {
     width: 90%;
     margin: auto;
+    min-height: calc(100vh - 66px); /* to help stick the footer to the bottom of page even when searching.
 }
 body {
     background:#efefef;
@@ -119,6 +120,8 @@ input:focus {
 
 footer {
     border-top: 2px solid #ddd;
+    width: 90%;
+    margin: auto;
 }
 
 .copyright {
@@ -128,6 +131,7 @@ footer {
 /* Media Queries */
 
 @media (min-width: 768px) {
+
     input {
         width: 60%;
         background-image: url(../photos/search_icon.png);
